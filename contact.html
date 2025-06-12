@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technetworks - Contact</title>
+    <link rel="stylesheet" href="Technetworkstyle.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <a href="index.html" class="logo-link"><h1>Technetworks.in</h1></a>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="home.html">Home</a></li>
+                     <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="contact-form-section">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+<!-- 
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="-----optional-----">
+                </div> -->
+
+
+
+                <div class="form-group">
+                   <label for="email">Email:</label>
+                   <div class="email-input-container">
+                   <input type="email" id="email" name="email" placeholder="-----optional-----">
+                   <button type="button" class="skip-btn" onclick="clearEmail()">Skip</button>
+                </div>
+                    </div>
+
+
+
+                <div class="form-group">
+                    <label for="service">Service Interested In:</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a service</option>
+                        <option value="it">IT Services</option>
+                        <option value="voice">Voice Services</option>
+                        <option value="non-voice">Non-Voice Services</option>
+                        <option value="semi-voice">Semi-Voice Services</option>
+                        <option value="inbound">Inbound Services</option>
+                        <option value="outbound">Outbound Services</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Enter your message here..."></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            
+            <div class="contact-info">
+                <h3>Our Office</h3>
+                <p>123 Tech Park, Bangalore</p>
+                <p>Karnataka, India - 560001</p>
+                <p>Phone: +91 9876543210</p>
+                <p>Email: info@technetworks.in</p>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+        <button class="faq-question">What industries do you specialize in?</button>
+        <div class="faq-answer">
+            <p>We have extensive experience in banking, healthcare, e-commerce...</p>
+        </div>
+    </div>
+    <!-- Add more FAQ items -->
+</section>
+
+
+
+<!-- 
+
+<div class="form-group">
+    <label for="attachment">Attach Files (Optional):</label>
+    <input type="file" id="attachment" name="attachment">
+</div> -->
+
+
+
+<div class="map-container">
+    <iframe src="https://maps.google.com/maps?q=Bangalore&output=embed" 
+            width="100%" height="400" frameborder="0" style="border:0"></iframe>
+</div>
+
+    <footer>
+        <p>&copy; 2025 Technetworks.in. All rights reserved.</p>
+    </footer>
+
+
+
+
+    
+
+    <div class="live-chat">
+    <button class="chat-btn">
+        <i class="fas fa-comment-dots"></i> Live Chat
+    </button>
+</div>
+    <script src="Technetworkscript.js"></script>
+</body>
+</html>
